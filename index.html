@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans:wght@700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <button class="btn_nav_toggle">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="navbar shown_nav_sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="LOGO">
+        </div>
+        <div class="navOption">
+            <a href="/work.html">
+                <p>My work</p>
+            </a> 
+            <a href="/articles.html">
+                <p>Articles</p>
+            </a> 
+            <a href="/instagram.html">
+                <p>Instagram</p>
+            </a> 
+        </div>
+    </div>
+    <div class="box1"></div>
+    <div class="main">
+        <div class="headText">
+            <span class="hiText">Hi! I am</span> 
+            <span class="fullName">
+                <span class="fname">Srishti</span>
+                <span class="lname">Vashishtha</span></div>
+            </span>
+        <div class="headImg">
+            <img src="./assets/images/image1.jpg" alt="Srishti Vashishtha">
+        </div>
+    </div>
+    <div class="about">
+        <div class="heading">
+            <p class="heading1">About Me</p>
+            <p class="headingInfo">
+                I am the most passionate designer you'll ever work with. I am currently working as a software engineer in one of the best organisation in India. But as the fate would have it, I am more inclined to designing the products from scratch rather than developing it.<br><br> So to pursue my passion for design, I started taking up small to medium sized projects to gain practical knowledge of UI//UX design and to understand how <b>stakeholder communications, user research, storyboarding and usability testing </b>works in the real world. My arsenal consists of <b>Visual Design, Motion Design and Interaction Design.</b> <br> <br>Currently I am actively looking forward to test the waters of design industry and help the organisations grow along with me.
+            </p>
+        </div>
+        <div class="buttons">
+            <a href="./work.html"> 
+                <button class="button">Work</button>
+            </a>
+            <a href="./articles.html"> 
+                <button class="button">Articles</button>
+            </a>
+            <a href="./instagram.html"> 
+                <button class="button">Instagram</button>
+            </a>
+        </div>
+        <a href="https://drive.google.com/file/d/1NI_rmw8hru7Rt0eQvITKJm180hNvd64D/view?usp=sharing" target="_blank">
+            <div class="CV">
+                <button class="CVButton">Download CV</button>
+            </div>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.btn_nav_toggle').click(function(){
+            $('.navOption').slideToggle();
+            $(this).toggleClass('activeToggles')
+        })
+    </script>
+   
+</body>
+</html>
