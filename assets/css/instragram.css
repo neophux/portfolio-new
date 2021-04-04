@@ -1,0 +1,217 @@
+.main{
+    display: flex;
+    margin-top: 50px;
+    padding: 0 50px;
+}
+
+.image{
+    width: 45%;
+}
+.info{
+    width: 40%;
+    padding-left:5%;
+    display: flex;
+    align-items: center;
+}
+.instaIcons{
+    display: flex;
+}
+.instaLogo{
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.instaLogo img{
+    width: 100%;
+}
+.insta-handle{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.insta-handle p{
+    font-size: 24px;
+    font-size: 4vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: black
+}
+.insta-para{
+    margin: 30px 0;
+    font-size: 3.1vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    color: rgb(37, 37, 37);
+}
+.follow{
+    color: white;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 12px 24px;
+    border:none;
+    font-size: 20px;
+    transition: 0.8s cubic-bezier(0.2,1,0.2,1);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.follow:hover{
+    transform:translateY(-2px);
+    box-shadow: 0px 15px 30px 0px rgba(255, 0, 102,0.25);
+}
+.image img{
+    margin-top:10%;
+    width: 90%;
+    height: 80%;
+}
+
+/*a{
+    
+    font-size: 24px;
+    color: black;
+}*/
+.navContent a:hover span{
+    color:var(--primary-color);
+    border-bottom:3px solid var(--primary-color);
+}
+.instagramNav{
+    color:var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* .nav a:hover>span{
+    color:var(--primary-color);
+    border-bottom:3px solid var(--primary-color);
+}
+.instagramNav > span{
+    color: var(--primary-color) !important;
+    border-bottom:3px solid var(--primary-color);
+} */
+@media only screen and (max-width: 1200px) {
+    .main{
+        padding: 0;
+    }
+    .content{
+        width: 90%;
+        margin:0 auto;
+    }
+    .info{
+        padding-left: 50px;
+    }
+    .nav .logo{
+        display: block;
+        padding: 20px;
+    }
+    a{
+        font-size: 20px;
+    }
+    .image img{
+        margin-top:10%;
+        width: 90%;
+        height: 80%;
+    }
+    .insta-handle p{
+        font-size: 24px;
+        font-size: 4vh;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        color: black
+    }
+    .logo img{
+        width:8%;  
+        height:8%;
+        margin-top:1%;
+      
+    }
+    
+}
+@media only screen and (max-width: 1024px) {
+    .content{
+        width: 60%;
+        flex-direction: column;
+    }  
+    .main{
+        padding: 10px;
+    }
+    .image{
+        width: 100%;
+    }
+    .image img{
+        margin-top:10%;
+        width: 90%;
+        height: 90%;
+    }
+    .insta-para p{
+
+        margin: 30px 0;
+        font-size: 3.2vh;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 300;
+        color: rgb(37, 37, 37);
+    }
+    .info{
+        margin-top: 50px;
+        padding-left: 20px;
+        width: 100%;
+    }
+    .follow{
+        color: white;
+        background-color: var(--primary-color);
+        padding: 10px 26px;
+        border:none;
+        margin-top: 2%;
+        margin-bottom: 70px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 3.2vh;
+        transition: 0.3s all ease-in-out;
+    }
+    .instaLogo img{
+        width: 100%;
+        height:80%;
+    }
+    .insta-handle p{
+        
+        font-size: 3vh;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        color: black
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .content{
+        width: 85%;
+        flex-direction: column;
+    }
+    .image img{
+        margin-top:10%;
+        width: 90%;
+        height: 95%;
+    }
+    .main{
+        padding: 10px;
+    }
+    .image{
+        width: 100%;
+    }
+    .insta-para p{
+        font-size: 16px;
+    }
+    .info{
+        margin-top: 50px;
+        padding-left: 20px;
+        width: 100%;
+    }
+    .follow{
+        font-size: 16px;
+    }    
+    .logo img{
+        width:50%;  
+        height:60%;
+        margin-top:4%;
+        margin-left: 10%;
+      
+    }
+    
+}
