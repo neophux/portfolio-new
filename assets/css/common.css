@@ -5,7 +5,10 @@
     --tile-color:#E8DDDD;
 }
 /* global css start */
-*{box-sizing: border-box;}
+*{
+    box-sizing: border-box;
+    outline: none;
+}
 html , body{
     overflow: hidden;overflow-y: auto;
 }
@@ -162,7 +165,9 @@ p{margin: 0;}
     z-index: 2;
 }
 
-
+.navContent_two{
+    border-bottom: 2px solid var(--primary-color);
+}
 
 .mobile_header .navContent_two {
     position: absolute;
@@ -172,6 +177,8 @@ p{margin: 0;}
     height: auto;
     background: #fff;
     padding: 18px 15px 10px;
+    font-size: 20px;
+    z-index: 1;
     display: none;
 }
 

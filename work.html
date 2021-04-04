@@ -2,8 +2,11 @@
     <head>
         <title>My articles</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/common.css">
         <link rel="stylesheet" href="/work.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans:wght@700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         
@@ -19,6 +22,20 @@
                 <img src="logo.png" alt="LOGO">
             </div>
         </div>
+        <!-- mobile-header HTML start -->
+    <nav class="mobile_header">
+        <a href="#" class="mob_logo"><img src="./logo.png" alt="logo"></a>
+        <button class="mob_btn_nav_toggle">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="navContent_two">
+            <a href="/index.html"><span>Home</span></a>
+            <a href="/work.html" class="work"><span>My work</span></a>
+            <a href="/articles.html"><span>Articles</span></a>
+            <a href="/instagram.html"><span class="instagramNav"> Instagram</span></a>    
+        </div>
+    </nav>
+    <!-- mobile-header HTML end -->
         <div class="sidebar"></div>
         <div class="row">
             <div class="main">
@@ -167,10 +184,16 @@
                     <a href="/index.html"><span>Home</span> </a>
                     <a href="/work.html" class="work"> <span> My work</span></a>
                     <a href="/articles.html"><span> Articles </span></a>
-                    <a href="/instagram.html" class="instagramNav"><span> Instagram </span></a>    
+                    <a href="/instagram.html"><span> Instagram </span></a>    
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $('.mob_btn_nav_toggle').click(function(){
+                $('.navContent_two').slideToggle();
+            })
+        </script>
         <script>
             /**
              * function name -> openLink

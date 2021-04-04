@@ -20,6 +20,7 @@ a{
     height: 150%;
     left: 0;
     top: 0;
+    z-index: -99;
     position: fixed;
 }
 .nav{
@@ -540,11 +541,12 @@ img{
         display: none;
     }
     .nav{
-        position: absolute;
+        /* position: absolute;
         top: 0;
         width: 100vw;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between; */
+        display: none;
     }
     .nav .logo{
         display: block;
