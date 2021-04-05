@@ -316,6 +316,17 @@ img{
     color: var(--primary-color) !important;
     border-bottom:3px solid var(--primary-color);
 }
+.logo_desktop{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo_desktop img{
+    width: 160px;
+    height: auto;
+    margin-top: 10px;
+}
+
 @media only screen and (min-width: 1600px){
     *{
         box-sizing: border-box;
@@ -361,6 +372,10 @@ img{
     .main{
         width: 85%;
         padding-left: 5%;
+    }
+    .logo_desktop{
+        display: flex;
+        justify-content: center;
     }
     .logo img{
         width:8%;  
@@ -505,7 +520,7 @@ img{
         border-bottom:3px solid var(--primary-color);
     }
 } 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     .para{
         font-size: 15px;
         font-family: 'Nunito', sans-serif;
@@ -531,9 +546,7 @@ img{
         height: 32%;
     }
     .logo img{
-        width:8%;  
-        height:5%;
-        margin-top:1%;
+        display: none;
       
     }
     

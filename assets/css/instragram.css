@@ -91,6 +91,14 @@ body{
     color: var(--primary-color) !important;
     border-bottom:3px solid var(--primary-color);
 } */
+
+@media only screen and (max-width: 1920px) {
+    .follow{
+        padding:15px 25px;
+        font-size: 25px;
+    }
+
+}
 @media only screen and (max-width: 1200px) {
     .main{
         padding: 0;
